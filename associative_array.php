@@ -1,21 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 <?php
 
-$name = array(
-    "sojun" => 15,
-    "sourov" => 17
-);
+    $name = array(
+        "sojun" => 15,
+        "sourov" => 17
+    );
 
-$key = array_keys($name);
-echo 'keys :<pre>';
-print_r($key);
+    $key = array_keys($name);
+    echo 'keys :<br>';
+    print_r($key);
 
-$value = array_values($name);
-echo 'Values: <pre>';
-print_r($value);
+    $value = array_values($name);
+    echo '<br><br>Values: <pre>';
+    print_r($value);
 
-?>
-<?php
-foreach ($name as $key => $value) {
-?>
-    <p><?php echo $key; ?> : <?php echo $value ?></p>
-<?php } ?>
+    foreach ($name as $key => $value) {
+        echo "Key: $key, Value: $value<br>";
+    }
+    ?>
+</body>
+</html>

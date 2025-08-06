@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>index.php file</title>
 </head>
 
 <body>
-    <?php
-    for ($i = 0; $i < 10; $i++) {
-    ?>
-        <h1>15 -> <label>sojun</label>
-            <?php echo "(show output using echo)" ?>
-        </h1>
-    <?php } ?>
+<?php
+    $numbers = array(1, 2, 4, 6);
+    echo "size of array: " . count($numbers) . "<br>";
+    for($i= 0; $i < count($numbers); $i++) {
+        echo "number: $numbers[$i]<br>";
+    }
+?>
 </body>
-
 </html>
